@@ -1,0 +1,10 @@
+jade filename.jade  -> to render html file
+
+jade --client --no-debug jadefile.jade  -> to render js file
+
+
+
+
+
+
+
