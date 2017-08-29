@@ -53,3 +53,33 @@ html
 
 		//- If you want to use javascript here, just do #{Your Java Script Code}
 		p 22*2 = #{22*2}
+
+		- myGradesArray = [3.67, 3.67, 3.55, 4]
+
+		ul
+			li#list: a(href="#") #{myGradesArray[0]}
+			li#list: a(href="#") #{myGradesArray[1]}
+			li#list: a(href="#") #{myGradesArray[2]}
+			li#list: a(href="#") #{myGradesArray[3]}
+
+
+		//- How to print the values directly
+		- sayHello = "Hello, How are you?"
+		p= sayHello
+
+
+		//- How to use tags and not use tags encoging
+		- hey = "<u> Hello Man </u>"
+		//- will have tag
+		p= hey	
+		
+		//- will not have tag
+		p!= hey	
+
+
+
+
+		- formData = {"type": "text", "name": "fName"}
+		
+		span First Name
+		input(type= formData.type, name = formData.name)
