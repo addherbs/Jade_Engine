@@ -1,0 +1,43 @@
+doctype
+
+html
+
+	include ./head.jade
+
+	body
+
+	div
+
+		p First Paragraph
+
+		p
+			| here this is my first block of the paragraph --> "|" is the symbol to use one para or part
+			br
+			| here this is my second block of the paragraph
+
+
+		p(id="2nd_para", class="myclass").
+				here this is my first block of the paragraph --> use () for more tags
+
+
+		#2nd_div.1stClass.2ndClass
+			If no tags are mentioned it directly uses div tags
+			br
+			# is used for id
+			br
+			"." is used for classes
+			br
+			can have multiple classes		
+
+		ul
+			li#list
+				a(href="#") 1st
+			li#list
+				a(href="#") 2nd
+			li#list
+				a(href="#") 3rd
+
+		ul
+			li#list: a(href="#") 1st
+			li#list: a(href="#") 2nd
+			li#list: a(href="#") 3rd
