@@ -41,3 +41,15 @@ html
 			li#list: a(href="#") 1st
 			li#list: a(href="#") 2nd
 			li#list: a(href="#") 3rd
+
+		//- Comment wont be displayed in the HTML fille
+		// these comments will be shown in page source
+
+
+		//- Interpolation( using javascript in html using Jade)
+		- myName = "Aditya"
+		p Hello  #{myName}
+
+
+		//- If you want to use javascript here, just do #{Your Java Script Code}
+		p 22*2 = #{22*2}
