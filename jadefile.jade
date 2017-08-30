@@ -142,3 +142,8 @@ html
 			- for(i=0;i<fruits.length; i++){
 				li #{fruits[i]}
 			- }
+
+			//- You can do this too
+			ul
+				each fruit in fruits
+					li= fruit
