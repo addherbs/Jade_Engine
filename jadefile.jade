@@ -106,6 +106,14 @@ html
 			h3 You can drive
 
 
+
+		//- You can also use the ternary operator
+
+		- dayTime = (((hour >= 6) && (hour <= 17)) ? 'Day Time' : 'Night Time')
+
+		h3 #{dayTime}
+
+
 		- formData = {"type": "text", "name": "fName"}
 
 		span First Name
