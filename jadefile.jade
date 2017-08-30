@@ -134,3 +134,11 @@ html
 
 		span First Name
 		input(type= formData.type, name = formData.name)
+
+
+		p How to loop
+		- fruits = ['apple','banana','mango']
+		ul
+			- for(i=0;i<fruits.length; i++){
+				li #{fruits[i]}
+			- }
