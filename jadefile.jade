@@ -114,6 +114,18 @@ html
 		h3 #{dayTime}
 
 
+		//- Case works like Switch
+				- name = "Sue"
+
+				case name
+					when "Sally"
+						h3 Hi Sally
+					when "Sue"
+						h3 Hi Sue
+					default
+						h3 Hi You
+
+
 		- formData = {"type": "text", "name": "fName"}
 
 		span First Name
