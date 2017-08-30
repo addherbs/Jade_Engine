@@ -27,7 +27,7 @@ html
 			br
 			"." is used for classes
 			br
-			can have multiple classes		
+			can have multiple classes
 
 		ul
 			li#list
@@ -68,18 +68,25 @@ html
 		p= sayHello
 
 
-		//- How to use tags and not use tags encoging
+		//- How to use tags and not use tags encoding
 		- hey = "<u> Hello Man </u>"
 		//- will have tag
-		p= hey	
-		
+		p= hey
+
 		//- will not have tag
-		p!= hey	
+		p!= hey
+		p !{hey}
 
+		- date = new Date()
+		- hour = date.getHours()
 
-
+		-if ((hour >= 6) && (hour <= 17)){
+			h3 Day Time
+		- } else {
+			h3 Night Time
+		- }
 
 		- formData = {"type": "text", "name": "fName"}
-		
+
 		span First Name
 		input(type= formData.type, name = formData.name)
