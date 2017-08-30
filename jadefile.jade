@@ -147,3 +147,8 @@ html
 			ul
 				each fruit in fruits
 					li= fruit
+
+		//- How to create a function in jade using mixin which is a reusable piece of code
+		//- Function can be parameter less also
+		mixin functionNameSum(number1, number2, number3)
+			p sum= #{number1+number2+number3}
